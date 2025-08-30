@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نبذة عن المشروع — محطة كهرباء البرلس</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#004080;
+      --accent:#0073e6;
+      --bg:#f5f7fa;
+      --text:#2b2b2b;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--text)}
+
+    /* Loader */
+    #loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:var(--brand);z-index:9999;transition:opacity .6s ease,visibility .6s ease}
+    .spinner{width:62px;height:62px;border:6px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    header{position:sticky;top:0;z-index:10;background:var(--brand);color:#fff}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{font-weight:800;font-size:22px}
+    .tabs{display:flex;gap:14px}
+    .tabs a{color:#fff;text-decoration:none;font-weight:700;padding:8px 14px;border-radius:10px;transition:.3s}
+    .tabs a:hover{background:rgba(255,255,255,.1)}
+    .tabs a.active{background:#fff;color:var(--brand)}
+
+    .hero{background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;padding:50px 20px;text-align:center}
+    .hero h1{margin:0;font-size:34px}
+    .hero p{margin-top:10px;font-size:18px;color:#eaf1ff}
+
+    .about-section{padding:40px 20px}
+    .about-section h2{color:var(--brand);font-size:24px;margin-bottom:20px;text-align:center}
+    .about-content{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start}
+    .about-content .text{flex:1 1 100%;font-size:16px;line-height:1.8;margin-bottom:20px}
+
+    .images-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .images-grid img{width:100%;height:220px;object-fit:cover;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.2);transition:transform 0.3s}
+    .images-grid img:hover{transform:scale(1.05)}
+
+    footer{margin-top:30px;background:#002244;color:#c8d7ee;text-align:center;padding:16px}
+  </style>
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader"><div class="spinner"></div></div>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">محطة كهرباء البرلس</div>
+       <nav class="tabs" aria-label="التنقل الرئيسي">
+        <a href="./index.html" >الرئيسية</a>
+        <a href="./sources.html">المصادر</a>
+        <a href="./Programs.html">البرامج المستخدمة</a>
+        <a href="./Gallery.html">الصور</a>
+        <a href="./About.html" class="active">نبذة</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>نبذة عن المشروع</h1>
+      <p>تعرف على تفاصيل محطة كهرباء البرلس وأهميتها لمصر</p>
+    </div>
+  </section>
+
+  <section class="about-section container">
+    <h2>تفاصيل المشروع</h2>
+    <div class="about-content">
+      <div class="text">
+        <p>
+          محطة كهرباء البرلس من أضخم محطات الكهرباء في الشرق الأوسط بطاقة إنتاجية تصل إلى
+          <strong>4800 ميجاوات</strong> أي ما يعادل ضعف إنتاج السد العالي.
+          تقع على الطريق الساحلي الدولي بمحافظة كفر الشيخ، وتعمل بالغاز الطبيعي بنظام الدورة المركبة.
+        </p>
+        <p>
+          تم بناء المحطة على مساحة <strong>250 فدان</strong>، وبدأ العمل بها عام 2015
+          بالتعاون مع شركة سيمنز الألمانية، وتم افتتاحها بالكامل في يوليو 2018.
+        </p>
+      </div>
+    </div>
+
+    <div class="images-grid">
+      <!-- الصف الأول من الصور -->
+      <img src="./image/4.jpeg" alt="صورة المحطة 1">
+      <img src="./image/5.jpeg" alt="صورة المحطة 2">
+      <img src="./image/15.jpeg" alt="صورة المحطة 8">
+
+      <!-- الصف الثاني من الصور -->
+      <img src="./image/8.jpeg" alt="صورة المحطة 4">
+      <img src="./image/9.jpeg" alt="صورة المحطة 5">
+      <img src="./image/10.jpeg" alt="صورة المحطة 6">
+
+      <!-- الصف الثالث من الصور -->
+      <img src="./image/11.jpeg" alt="صورة المحطة 7">
+      <img src="./image/12.jpeg" alt="صورة المحطة 8">
+      <img src="./image/13.jpeg" alt="صورة المحطة 9">
+
+      <!-- الصف الرابع من الصور -->
+      <img src="./image/14.jpeg" alt="صورة المحطة 7">
+      <img src="./image/7.jpeg" alt="صورة المحطة 3">
+      <img src="./image/13.jpeg" alt="صورة المحطة 9">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 مشروع محطة كهرباء البرلس</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load',()=>{
+      const loader=document.getElementById('loader');
+      loader.style.opacity='0';
+      loader.style.visibility='hidden';
+    });
+  </script>
+</body>
+</html>
